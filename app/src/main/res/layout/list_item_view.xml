@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@android:color/darker_gray"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/list_selector"
+        android:orientation="horizontal"
+        android:layout_margin="8dp"
+
+        >
+    <de.hdodenhof.circleimageview.CircleImageView
+
+        android:id="@+id/profile_image"
+        android:layout_gravity="center"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/aafassy"
+        android:layout_margin="8dp"
+        />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="bottom"
+                android:id="@+id/nom_artist"
+                style="@style/wordsStyle"
+                tools:text="nom_artist :"
+               />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:id="@+id/nom_chanssant"
+                style="@style/wordsStyle"
+                tools:text="nom_chanssant"
+                />
+
+
+        </LinearLayout>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:id="@+id/check"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
