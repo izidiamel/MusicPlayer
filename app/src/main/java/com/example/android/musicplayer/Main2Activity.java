@@ -17,8 +17,6 @@ public class Main2Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list_artist);
 
-
-
         songs= new ArrayList<SongObject>();
         songs =  getIntent().getParcelableArrayListExtra("list");
 
